@@ -1,0 +1,51 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "history": "^4.7.2",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.1",
+    "react": "16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.1",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.5.0",
+    "react-test-renderer": "^16.3.2",
+    "redux-devtools-extension": "^2.13.2",
+    "tape": "^4.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "./node_modules/.bin/eslint --ext .js src",
+    "lint-fix": "./node_modules/.bin/eslint --fix .js src",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "./node_modules/.bin/eslint --fix",
+      "git add"
+    ]
+  }
+}
